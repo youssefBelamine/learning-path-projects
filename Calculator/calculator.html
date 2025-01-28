@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+    section{
+        border: 4px solid #3366ff;
+        padding: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 502px;
+        border-radius: 25px;
+        background-color: #4d79ff;
+    }
+
+    div{
+        border: 2px solid;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 46px;
+        border-radius: 25%;
+        margin: 5px;
+        background-color: #668cff;
+    }
+    main{
+        border: #3366ff solid 2px;
+        padding: 6px;
+        width: 346px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ccd9ff;
+        border-radius: 25px;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
+
+    aside{
+        border: #3366ff solid 2px;
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ccd9ff;
+        border-radius: 25px;
+        margin-top: 10px;
+    }
+
+    header{
+        width: 482px;
+        border: solid #3366ff;
+        height: 150px;
+        border-radius: 25px;
+        background-color: #e6ecff;
+        font-size: 140px;
+        font-weight: bold;
+        font-family: arial;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        overflow-x: scroll;
+         overflow-y: hidden; 
+    }
+    
+
+    article{
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* border: solid; */
+        height: 721px;
+
+    }
+
+    div:hover{
+        background-color: #3366ff;
+    }
+</style>
+<body>
+    <article>
+        <section>
+            <header id="showZone"></header>
+            
+            <main>
+                <div>7</div>  <div>8</div>  <div>9</div>
+                
+                <div>4</div>  <div>5</div>  <div>6</div>
+                
+                <div>1</div>  <div>2</div>  <div>3</div>
+    
+                <div>0</div>  <div>.</div>  <div id="equal">=</div>
+            </main>
+            <aside>
+                <div>/</div>
+                <div>X</div>
+                <div>-</div>
+                <div>+</div>
+            </aside>
+        </section>
+    </article>
+    <script src="calculator.js"></script>
+</body>
+</html>
