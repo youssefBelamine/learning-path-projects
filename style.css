@@ -1,0 +1,142 @@
+/* Container for the list of stagiaires with updated border and scrollbar styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    height: 75vh;
+    overflow: auto;
+    border: 3px solid #007BFF; /* New border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better focus */
+}
+
+/* Custom scrollbar styling */
+.container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #007BFF; /* Scrollbar thumb color */
+    border-radius: 5px; /* Rounded edges */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Scrollbar track color */
+    border-radius: 5px;
+}
+
+/* Individual card styling */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: aliceblue;
+}
+
+/* Styling for the photo */
+.photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Name styling */
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Ville styling */
+.ville {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Filiere styling */
+.filiere {
+    font-size: 14px;
+    color: #007BFF;
+    margin-top: 5px;
+}
+
+/* Delete button styling */
+.deleteButton {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effect for delete button */
+.deleteButton.hover,
+.deleteButton:hover {
+    background-color: #d43f3a;
+}
+
+/* Delete icon styling */
+.deleteIcon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Edit button styling */
+.modifyButton {
+    background-color: #4CAF50; /* Green background for the edit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; /* Add spacing between buttons */
+}
+
+/* Hover effect for edit button */
+.modifyButton.hover,
+.modifyButton:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Edit icon styling */
+.modifyButton .modifyIcon {
+    width: 30px; /* Slightly smaller than the delete icon */
+    height: 30px;
+}
